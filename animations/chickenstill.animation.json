@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.chickenstill.baby_transform": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"scale": 2
+				}
+			}
+		},
+		"animation.chickenstill.general": {
+			"loop": true,
+			"bones": {
+				"wing0": {
+					"rotation": [0, 0, "variable.wing_flap-this"]
+				},
+				"wing1": {
+					"rotation": [0, 0, "-variable.wing_flap-this"]
+				}
+			}
+		},
+		"animation.chickenstill.move": {
+			"loop": true,
+			"anim_time_update": "query.modified_distance_moved",
+			"bones": {
+				"leg0": {
+					"rotation": ["math.cos(query.anim_time*38.17)*80.0", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["math.cos(query.anim_time*38.17)*-80.0", 0, 0]
+				}
+			}
+		}
+	}
+}

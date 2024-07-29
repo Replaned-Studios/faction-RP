@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mrleefy:pigstill",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "pig"
+			},
+			"textures": {
+				"default": "textures/entity/pigstill/pigstill",
+				"saddled": "textures/entity/pig/pig_saddle",
+				"saddle": "textures/entity/pigstill/saddle"
+			},
+			"geometry": {
+				"default": "geometry.pigstill"
+			},
+			"animations": {
+				"setup": "animation.pigstill.setup",
+				"walk": "animation.pigstill.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.pigstill.baby_transform"
+			},
+			"scripts": {
+				"animate": [
+					"setup",
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target",
+					{
+						"baby_transform": "query.is_baby"
+					}
+				]
+			},
+			"render_controllers": ["controller.render.pig"]
+		}
+	}
+}

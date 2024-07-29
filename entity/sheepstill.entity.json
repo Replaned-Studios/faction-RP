@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mrleefy:sheepstill",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "sheep"
+			},
+			"textures": {
+				"default": "textures/entity/sheepstill"
+			},
+			"geometry": {
+				"default": "geometry.sheepstill",
+				"sheared": "geometry.sheep.sheared.v1.8"
+			},
+			"animations": {
+				"setup": "animation.sheepstill.setup",
+				"grazing": "animation.sheepstill.grazing",
+				"walk": "animation.sheepstill.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.sheepstill.baby_transform",
+				"move": "controller.animation.sheep.move"
+			},
+			"scripts": {
+				"animate": [
+					"setup",
+					"look_at_target",
+					"move",
+					{
+						"baby_transform": "query.is_baby"
+					}
+				]
+			},
+			"render_controllers": ["controller.render.sheep"]
+		}
+	}
+}

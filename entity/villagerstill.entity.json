@@ -1,0 +1,75 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mrleefy:villagerstill",
+			"materials": {
+				"default": "villager_v2",
+				"masked": "villager_v2_masked"
+			},
+			"textures": {
+				"base": "textures/entity/villagerstill/base",
+				"base2": "textures/entity/villagerstill/base2",
+				"base3": "textures/entity/villagerstill/base3",
+				"base4": "textures/entity/villagerstill/base4",
+				"base5": "textures/entity/villagerstill/base5",
+				"base6": "textures/entity/villagerstill/base6",
+				"desert": "textures/entity/villagerstill/desert",
+				"jungle": "textures/entity/villagerstill/jungle",
+				"plains": "textures/entity/villagerstill/plains",
+				"savanna": "textures/entity/villagerstill/savanna",
+				"snow": "textures/entity/villagerstill/snow",
+				"swamp": "textures/entity/villagerstill/swamp",
+				"taiga": "textures/entity/villagerstill/taiga",
+				"armorer": "textures/entity/villagerstill/armorer",
+				"butcher": "textures/entity/villagerstill/butcher",
+				"cartographer": "textures/entity/villagerstill/cartographer",
+				"cleric": "textures/entity/villagerstill/cleric",
+				"farmer": "textures/entity/villagerstill/farmer",
+				"fisherman": "textures/entity/villagerstill/fisherman",
+				"fletcher": "textures/entity/villagerstill/fletcher",
+				"leatherworker": "textures/entity/villagerstill/leatherworker",
+				"librarian": "textures/entity/villagerstill/librarian",
+				"shepherd": "textures/entity/villagerstill/shepherd",
+				"tool_smith": "textures/entity/villager2/professions/toolsmith",
+				"weapon_smith": "textures/entity/villager2/professions/weaponsmith",
+				"stonemason": "textures/entity/villagerstill/stonemason",
+				"nitwit": "textures/entity/villagerstill/nitwit",
+				"unskilled": "textures/entity/villagerstill/unskilled",
+				"level_stone": "textures/entity/villagerstill/level_stone",
+				"level_iron": "textures/entity/villagerstill/level_iron",
+				"level_gold": "textures/entity/villagerstill/level_gold",
+				"level_emerald": "textures/entity/villagerstill/level_emerald",
+				"level_diamond": "textures/entity/villagerstill/level_diamond",
+				"toolsmith": "textures/entity/villagerstill/toolsmith",
+				"weaponsmith": "textures/entity/villagerstill/weaponsmith"
+			},
+			"geometry": {
+				"default": "geometry.villagerstill"
+			},
+			"scripts": {
+				"scale": "0.9375",
+				"pre_animation": ["variable.num_professions=15;", "variable.num_tiers=3;", "variable.profession_index=(query.variant<variable.num_professions?query.variant:0);", "variable.level_index=query.trade_tier;"]
+			},
+			"animations": {
+				"general": "animation.villager.general",
+				"look_at_target": "animation.common.look_at_target",
+				"move": "animation.villager.move",
+				"baby_transform": "animation.villager.baby_transform",
+				"get_in_bed": "animation.villager.get_in_bed"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.villager_v2.general"
+				},
+				{
+					"move": "controller.animation.villager_v2.move"
+				},
+				{
+					"baby": "controller.animation.villager_v2.baby"
+				}
+			],
+			"render_controllers": ["controller.render.villager_v2_base", "controller.render.villager_v2_masked", "controller.render.villager_v2_level"]
+		}
+	}
+}

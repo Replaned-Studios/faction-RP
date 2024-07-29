@@ -1,0 +1,84 @@
+{
+  "num_mip_levels": 4,
+  "padding": 8,
+  "resource_pack_name": "main reapland bp",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "soulless_black_block": {
+      "textures": "textures/blocks/Black"
+    },
+    "soulless_safe_block": {
+      "textures": "textures/blocks/green_block"
+    },
+    "sheepspawner": {
+      "textures": [
+        {
+          "path": "textures/blocks/sheepspawner"
+        }
+      ]
+    },
+    "blazespawner": {
+      "textures": ["textures/blocks/blazespawner"]
+    },
+    "chickenspawner": {
+      "textures": ["textures/blocks/chickenspawner"]
+    },
+    "cowspawner": {
+      "textures": ["textures/blocks/cowspawner"]
+    },
+    "pigspawner": {
+      "textures": ["textures/blocks/pigspawner"]
+    },
+    "snowgolemspawner": {
+      "textures": ["textures/blocks/snowgolemspawner"]
+    },
+    "skeletonspawner": {
+      "textures": ["textures/blocks/skeletonspawner"]
+    },
+    "zombiespawner": {
+      "textures": ["textures/blocks/zombiespawner"]
+    },
+    "spiderspawner": {
+      "textures": ["textures/blocks/spiderspawner"]
+    },
+    "irongolemspawner": {
+      "textures": ["textures/blocks/irongolemspawner"]
+    },
+    "endermanspawner": {
+      "textures": ["textures/blocks/endermanspawner"]
+    },
+    "slimespawner": {
+      "textures": ["textures/blocks/slimespawner"]
+    },
+    "witherskeletonspawner": {
+      "textures": ["textures/blocks/witherskeletonspawner"]
+    },
+    "creeperspawner": {
+      "textures": ["textures/blocks/creeperspawner"]
+    },
+    "guardianspawner": {
+      "textures": ["textures/blocks/guardianspawner"]
+    },
+    "magmacubespawner": {
+      "textures": ["textures/blocks/magmacubespawner"]
+    },
+    "goldgolemspawner": {
+      "textures": ["textures/blocks/goldgolemspawner"]
+    },
+    "diamondgolemspawner": {
+      "textures": ["textures/blocks/diamondgolemspawner"]
+    },
+    "emeraldgolemspawner": {
+      "textures": ["textures/blocks/emeraldgolemspawner"]
+    },
+    "netheritegolemspawner": {
+      "textures": ["textures/blocks/netheritegolemspawner"]
+    },
+    "shulkerspawner": {
+      "textures": ["textures/blocks/shulkerspawner"]
+    },
+    "witherspawner": {
+      "textures": ["textures/blocks/witherspawner"]
+    }
+  }
+}

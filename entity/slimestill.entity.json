@@ -1,0 +1,26 @@
+//bridge-file-version: #48
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mrleefy:slimestill",
+			"materials": {
+				"default": "entity",
+				"slime_outer": "entity_alphablend",
+				"slime_inside": "entity_alphatest",
+				"eye0": "entity_alphatest",
+				"eye1": "entity_alphatest",
+				"mouth": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/slimestill"
+			},
+			"geometry": {
+				"default": "geometry.slimestill"
+			},
+			"render_controllers": [
+				"controller.render.slimestill"
+			]
+		}
+	}
+}

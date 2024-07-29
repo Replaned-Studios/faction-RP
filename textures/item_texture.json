@@ -1,0 +1,15 @@
+{
+	"resource_pack_name": "main reapland bp",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"soulless_menu": {
+			"textures": "textures/items/orbmenu"
+		},
+		"soulless_rulebook": {
+			"textures": "textures/items/rule_book"
+		},
+		"soulless_vipmenu": {
+			"textures": "textures/items/vipmenu"
+		}
+	}
+}

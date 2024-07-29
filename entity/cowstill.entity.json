@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mrleefy:cowstill",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "cow"
+			},
+			"textures": {
+				"default": "textures/entity/cowstill"
+			},
+			"geometry": {
+				"default": "geometry.cowstill"
+			},
+			"animations": {
+				"walk": "animation.cowstill.walk",
+				"look_at_target": "animation.common.look_at_target",
+				"baby_transform": "animation.cowstill.baby_transform"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target",
+					{
+						"baby_transform": "query.is_baby"
+					}
+				]
+			},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

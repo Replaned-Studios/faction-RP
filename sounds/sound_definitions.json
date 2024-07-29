@@ -1,0 +1,11 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "blies": {
+      "volume": 1,
+      "category": "music",
+      "load_on_low_memory": true,
+      "sounds": ["sounds/music/b_lies"]
+    }
+  }
+}

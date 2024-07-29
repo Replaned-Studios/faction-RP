@@ -1,0 +1,42 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mrleefy:diamondgolemstill",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/diamondgolemstill"
+			},
+			"geometry": {
+				"default": "geometry.diamond_golem"
+			},
+			"animations": {
+				"walk": "animation.diamondgolemstill.walk",
+				"move": "animation.diamondgolemstill.move",
+				"walk_to_target": "animation.diamondgolemstill.walk_to_target",
+				"move_to_target": "animation.diamondgolemstill.move_to_target",
+				"attack": "animation.diamondgolemstill.attack",
+				"flower": "animation.diamondgolemstill.flower",
+				"look_at_target": "animation.common.look_at_target",
+				"move_controller": "controller.animation.diamond_golem.move",
+				"arm_controller": "controller.animation.diamond_golem.arm_movement"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.modified_tcos0=Math.clamp(((Math.cos(query.modified_distance_moved*13.5)*Math.min(query.modified_move_speed,0.6)/variable.gliding_speed_value)*25.0),-12.5,12.5);"
+				],
+				"animate": [
+					"look_at_target",
+					"move_controller",
+					"arm_controller"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

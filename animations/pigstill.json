@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pig_dead_summon": {
+			"loop": true,
+			"animation_length": 1.5,
+			"timeline": {
+				"0": [
+					"/function entities/pig/pig_death"
+				]
+			}
+		}
+	}
+}

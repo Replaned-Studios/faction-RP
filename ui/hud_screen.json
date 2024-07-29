@@ -1,0 +1,128 @@
+{
+  "namespace": "hud",
+  "hud_player_renderer": {
+    "type": "panel",
+    "size": [15, 15],
+    "controls": [
+      {
+        "hud_player": {
+          "type": "custom",
+          "renderer": "hud_player_renderer",
+          "layer": 1,
+          "animation_reset_name": "screen_animation_reset",
+          "anims": [
+            "@common.screen_exit_size_animation_push",
+            "@common.screen_exit_size_animation_pop",
+            "@common.screen_entrance_size_animation_push",
+            "@common.screen_entrance_size_animation_pop"
+          ],
+          "bindings": [
+            {
+              "binding_name": "#paper_doll_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hud_title_text": {
+    "type": "panel",
+    "size": ["100%cm", "100%c"],
+    "anchor_from": "center_middle",
+    "anchor_to": "center_middle",
+    "alpha": 0.5,
+    "controls": [
+      {
+        "objectivebar": {
+          "type": "panel",
+          "size": ["100%c", "100%c"],
+          "offset": [0, 0],
+          "controls": [
+            {
+              "title_background": {
+                "type": "image",
+                "alpha": 1.0,
+                "size": ["100%cm", "100%c"],
+                "texture": "textures/ui/hud_tip_text_background",
+                "controls": [
+                  {
+                    "title": {
+                      "type": "label",
+                      "text": "$subtitle_text",
+                      "anchor_from": "center_middle",
+                      "anchor_to": "center_middle",
+                      "color": "$tool_tip_text",
+                      "text_alignment": "center",
+                      "layer": 1,
+                      "localize": false,
+                      "font_size": "medium",
+                      "alpha": 2.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "sidebar": {
+          "type": "panel",
+          "size": ["100%c", "100%c"],
+          "offset": [0, 25],
+          "controls": [
+            {
+              "title_background": {
+                "type": "image",
+                "alpha": 1.0,
+                "size": ["100%cm", "100%c"],
+                "texture": "textures/ui/hud_tip_text_background",
+                "controls": [
+                  {
+                    "title": {
+                      "type": "label",
+                      "text": "$title_text",
+                      "anchor_from": "center_middle",
+                      "anchor_to": "center_middle",
+                      "color": "$tool_tip_text",
+                      "text_alignment": "center",
+                      "layer": 1,
+                      "localize": false,
+                      "font_size": "medium",
+                      "alpha": 2.0
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "hud_actionbar_text": {
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "type": "image",
+    "size": ["90%c + 15px", "90%c + 15px"],
+    "offset": [0, 0],
+    "alpha": "@hud.anim_actionbar_text_background_alpha_out",
+          "controls": [
+            {
+              "actionbar_message": {
+                "type": "label",
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "text_alignment": "center",
+                "font_size": "medium",
+                "color": "$tool_tip_text",
+                "layer": 1,
+                "text": "$actionbar_text",
+                "localize": false,
+                "alpha": "@hud.anim_actionbar_text_alpha_out"
+              }
+            }
+          ]
+        }
+      }

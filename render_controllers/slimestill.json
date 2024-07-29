@@ -1,0 +1,32 @@
+//bridge-file-version: #23
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.slimestill": {
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				},
+				{
+					"slime_outer*": "material.slime_outer"
+				},
+				{
+					"slime_inside*": "material.slime_inside"
+				},
+				{
+					"eye0*": "material.eye0"
+				},
+				{
+					"eye1*": "material.eye1"
+				},
+				{
+					"mouth*": "material.mouth"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			]
+		}
+	}
+}

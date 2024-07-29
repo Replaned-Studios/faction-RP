@@ -1,0 +1,41 @@
+{
+    "format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+            "this is setup for text only": "remember this soul",
+			"identifier": "spawn:spawninfo",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/spawnInfoBoard"
+			}
+		},
+		"components": {
+			"minecraft:emitter_local_space": {
+				"position": true,
+				"rotation": true
+			},
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 1
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 15
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": " 15 "
+			  },
+			"minecraft:emitter_shape_point": {
+				"offset": [0, 0, 0.0]
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["2", "1.2"],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 2,
+					"texture_height": 15,
+					"uv": [0, 1],
+					"uv_size": [30, 30]
+				}
+			}
+		}
+	}
+}

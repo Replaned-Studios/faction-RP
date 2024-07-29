@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "soulless:keyseller",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/keyseller"
+      },
+      "geometry": {
+        "default": "geometry.keyseller"
+      },
+      "render_controllers": ["controller.render.shop"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#FFFFFF"
+      }
+    }
+  }
+}

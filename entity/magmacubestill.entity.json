@@ -1,0 +1,37 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mrleefy:magmacubestill",
+			"materials": {
+				"default": "magma_cube"
+			},
+			"textures": {
+				"default": "textures/entity/magmacubestill"
+			},
+			"geometry": {
+				"default": "geometry.magmacubestill"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.slime_squish_factor=(query.previous_squish_value+(query.current_squish_value-query.previous_squish_value)*query.frame_alpha);",
+					"variable.bounce=1/((variable.slime_squish_factor/(query.variant*0.5+1))+1);",
+					"variable.horizontal_scale_amount=variable.bounce*query.variant;",
+					"variable.vertical_scale_amount=(1/variable.bounce)*query.variant;"
+				]
+			},
+			"animations": {
+				"move": "animation.magmacubestill.move"
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.magma_cube.general"
+				}
+			],
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}
